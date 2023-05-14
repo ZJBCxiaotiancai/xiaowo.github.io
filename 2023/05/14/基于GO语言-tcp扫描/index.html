@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://zjbcxiaotiancai.github.io/xiaowo.github.io/categories/"/>
+  <link rel="canonical" href="https://zjbcxiaotiancai.github.io/xiaowo.github.io/2023/05/14/基于go语言-tcp扫描/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -32,20 +32,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>categories - 小蜗的博客</title>
-  <meta name="keywords" content="null">
+  <title>基于GO语言-tcp扫描 - 小蜗的博客</title>
+  <meta name="keywords" content="-go,null">
   <meta desc name="description" content="this is my blog - Elijah - 小蜗的博客">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="https://zjbcxiaotiancai.github.io/xiaowo.github.io/categories/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="基于GO语言-tcp扫描">
+<meta property="og:url" content="https://zjbcxiaotiancai.github.io/xiaowo.github.io/2023/05/14/%E5%9F%BA%E4%BA%8EGO%E8%AF%AD%E8%A8%80-tcp%E6%89%AB%E6%8F%8F/index.html">
 <meta property="og:site_name" content="小蜗的博客">
-<meta property="og:description" content="this is my blog">
+<meta property="og:description" content="tcp TCP的握手有三个过程，首先客户端发送一个syn的包，表示建立回话的开始，如果客户端收到超时，说明端口可能在防火墙后面。如果服务器应答了syn-ack包，意味着端口被打开了，否则会返回rst包，最后客户端需要另外发送一个ack包，此时连接已经建立。  项目说明 使用标准库中的net.Dial函数实现单个端口的测试 接下来利用flag包配置每个字符串或数字，以此方便修改数据 利用for循环逐">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-04-21T03:05:18.000Z">
-<meta property="article:modified_time" content="2023-04-21T03:05:18.068Z">
+<meta property="article:published_time" content="2023-05-14T01:33:36.000Z">
+<meta property="article:modified_time" content="2023-05-14T01:49:44.221Z">
 <meta property="article:author" content="Elijah">
+<meta property="article:tag" content="-go">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2293,7 +2294,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper page search' style="display: ;">
+      <div id="half" class='cover-wrapper post search' style="display: ;">
         
   <div id="parallax-window"></div>
 
@@ -2362,8 +2363,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-page" id="page" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://zjbcxiaotiancai.github.io/xiaowo.github.io/categories/index.html">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://zjbcxiaotiancai.github.io/xiaowo.github.io/2023/05/14/基于GO语言-tcp扫描/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="小蜗的博客">
   </span>
@@ -2384,7 +2385,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        categories
+        基于GO语言-tcp扫描
       </h1>
       <div class='new-meta-box'>
         
@@ -2405,10 +2406,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-04-21T11:05:18+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-05-14T09:33:36+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Apr 21, 2023</p>
+    <p>发布于：May 14, 2023</p>
   </a>
 </div>
 
@@ -2419,7 +2420,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>0 words</p>
+      <p>381 words</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
@@ -2449,9 +2450,38 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    
+    <h2 id="tcp"><a href="#tcp" class="headerlink" title="tcp"></a>tcp</h2><blockquote>
+<p>TCP的握手有三个过程，首先客户端发送一个syn的包，表示建立回话的开始，如果客户端收到超时，说明端口可能在防火墙后面。如果服务器应答了syn-ack包，意味着端口被打开了，否则会返回rst包，最后客户端需要另外发送一个ack包，此时连接已经建立。</p>
+</blockquote>
+<h2 id="项目说明"><a href="#项目说明" class="headerlink" title="项目说明"></a>项目说明</h2><blockquote>
+<p>使用标准库中的net.Dial函数实现单个端口的测试</p>
+<p>接下来利用flag包配置每个字符串或数字，以此方便修改数据</p>
+<p>利用for循环逐一扫描</p>
+<ul>
+<li>此时程序运行得极慢</li>
+</ul>
+<p>建立协程，加锁</p>
+</blockquote>
+<h2 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h2><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">	<span class="string">&quot;flag&quot;</span></span><br><span class="line">	<span class="string">&quot;fmt&quot;</span></span><br><span class="line">	<span class="string">&quot;net&quot;</span></span><br><span class="line">	<span class="string">&quot;sync&quot;</span></span><br><span class="line">	<span class="string">&quot;time&quot;</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">isOpen</span><span class="params">(host <span class="type">string</span>, port <span class="type">int</span>, timeout time.Duration)</span></span> <span class="type">bool</span> &#123;</span><br><span class="line">	time.Sleep(time.Millisecond * <span class="number">1</span>)</span><br><span class="line">	conn, err := net.DialTimeout(<span class="string">&quot;tcp&quot;</span>, fmt.Sprintf(<span class="string">&quot;%s:%d&quot;</span>, host, port), timeout)</span><br><span class="line">	<span class="keyword">if</span> err == <span class="literal">nil</span> &#123;</span><br><span class="line">		_ = conn.Close()</span><br><span class="line">		<span class="keyword">return</span> <span class="literal">true</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="literal">false</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">	hostname := flag.String(<span class="string">&quot;hostname&quot;</span>, <span class="string">&quot;baidu.com&quot;</span>, <span class="string">&quot;hostname to test&quot;</span>)</span><br><span class="line">	startPort := flag.Int(<span class="string">&quot;startPort&quot;</span>, <span class="number">80</span>, <span class="string">&quot;the port on which the scanning starts&quot;</span>)</span><br><span class="line">	endPort := flag.Int(<span class="string">&quot;end-port&quot;</span>, <span class="number">100</span>, <span class="string">&quot;the port from which the scanning ends&quot;</span>)</span><br><span class="line">	timeout := flag.Duration(<span class="string">&quot;timeout&quot;</span>, time.Millisecond*<span class="number">200</span>, <span class="string">&quot;timeout&quot;</span>)</span><br><span class="line">	flag.Parse()</span><br><span class="line"></span><br><span class="line">	ports := []<span class="type">int</span>&#123;&#125;</span><br><span class="line"></span><br><span class="line">	wg := &amp;sync.WaitGroup&#123;&#125;</span><br><span class="line">	mutex := &amp;sync.Mutex&#123;&#125;</span><br><span class="line">	<span class="keyword">for</span> port := *startPort; port &lt;= *endPort; port++ &#123;</span><br><span class="line">		wg.Add(<span class="number">1</span>)</span><br><span class="line">		<span class="keyword">go</span> <span class="function"><span class="keyword">func</span><span class="params">(p <span class="type">int</span>)</span></span> &#123;</span><br><span class="line">			opened := isOpen(*hostname, p, *timeout)</span><br><span class="line">			<span class="keyword">if</span> opened &#123;</span><br><span class="line">				mutex.Lock()</span><br><span class="line">				ports = <span class="built_in">append</span>(ports, p)</span><br><span class="line">				mutex.Unlock()</span><br><span class="line">			&#125;</span><br><span class="line">			wg.Done()</span><br><span class="line">		&#125;(port)</span><br><span class="line">	&#125;</span><br><span class="line">	wg.Wait()</span><br><span class="line">	fmt.Printf(<span class="string">&quot;opened.ports:%v\n&quot;</span>, ports)</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>本文转自：<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/OhS_RQZojJbkenOSS_tEng">https://mp.weixin.qq.com/s/OhS_RQZojJbkenOSS_tEng</a></p>
+</blockquote>
+
   </div>
   
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
+      
+    </div>
   
   
     
@@ -2461,10 +2491,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-04-21T11:05:18+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-05-14T09:49:44+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Apr 21, 2023</p>
+    <p>更新于：May 14, 2023</p>
   </a>
 </div>
 
@@ -2472,6 +2502,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         
           
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/go/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>-go</p></a></div>
+  <span hidden itemprop="keywords">-go</span>
+
 
         
       
@@ -2508,6 +2542,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
   
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2023/04/23/modbus/'>
+          <p class='title'>Modbus<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>modbus
+ModbusASCLL
+ModbusRTU                - 二进制编码                - CRC错误校验
+ModbusTCP&#x2F;IP
+
+R...</p>
+        </a>
+      
+    </div>
+  
   <!-- Custom Files postEnd begin-->
   
   <!-- Custom Files postEnd end-->
@@ -2519,7 +2568,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/categories/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2023/05/14/%E5%9F%BA%E4%BA%8EGO%E8%AF%AD%E8%A8%80-tcp%E6%89%AB%E6%8F%8F/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2551,9 +2600,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
 
-  <div class="">
-    <!-- pjax占位 -->
-  </div>
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#tcp"><span class="toc-text">tcp</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E8%AF%B4%E6%98%8E"><span class="toc-text">项目说明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%BA%90%E7%A0%81"><span class="toc-text">源码</span></a></li></ol>
+    </div>
+  </section>
 
   
 
@@ -2611,7 +2670,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3281,7 +3340,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"小蜗的博客","url":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Elijah","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/","sameAs":["https://github.com/volantis-x"],"description":"this is my blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/","name":"小蜗的博客"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"小蜗的博客","url":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/","keywords":null,"description":"this is my blog","author":{"@type":"Person","name":"Elijah","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/","description":"this is my blog"},"publisher":{"@type":"Organization","name":"小蜗的博客","url":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://zjbcxiaotiancai.github.io/xiaowo.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"categories","description":"this is my blog","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/categories/index.html"},"author":{"@type":"Person","name":"Elijah","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/"},"publisher":{"@type":"Organization","name":"小蜗的博客","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/categories/index.html","wordCount":0,"datePublished":"2023-04-21T03:05:18.000Z","dateModified":"2023-04-21T03:05:18.068Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"小蜗的博客","url":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Elijah","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/","sameAs":["https://github.com/volantis-x"],"description":"this is my blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/","name":"小蜗的博客"}},{"@type":"ListItem","position":3,"item":{"@id":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/2023/05/14/基于GO语言-tcp扫描/","name":"基于GO语言-tcp扫描"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"小蜗的博客","url":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/","keywords":null,"description":"this is my blog","author":{"@type":"Person","name":"Elijah","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/","description":"this is my blog"},"publisher":{"@type":"Organization","name":"小蜗的博客","url":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://zjbcxiaotiancai.github.io/xiaowo.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"基于GO语言-tcp扫描","description":"this is my blog","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/2023/05/14/%E5%9F%BA%E4%BA%8EGO%E8%AF%AD%E8%A8%80-tcp%E6%89%AB%E6%8F%8F/"},"author":{"@type":"Person","name":"Elijah","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/"},"publisher":{"@type":"Organization","name":"小蜗的博客","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/2023/05/14/%E5%9F%BA%E4%BA%8EGO%E8%AF%AD%E8%A8%80-tcp%E6%89%AB%E6%8F%8F/","wordCount":0,"datePublished":"2023-05-14T01:33:36.000Z","dateModified":"2023-05-14T01:49:44.221Z","keywords":"-go","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
