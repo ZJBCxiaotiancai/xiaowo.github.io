@@ -1593,7 +1593,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1684065498336),
+    lastupdate: new Date(1684122365791),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc"],
@@ -2368,9 +2368,78 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
+          
+        
       
     
     
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://zjbcxiaotiancai.github.io/xiaowo.github.io/2023/05/15/基于GO语言-UDP通讯/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="小蜗的博客">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="小蜗的博客">
+    <meta itemprop="description" content="this is my blog">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2023/05/15/%E5%9F%BA%E4%BA%8EGO%E8%AF%AD%E8%A8%80-UDP%E9%80%9A%E8%AE%AF/"  itemprop="url">
+        基于GO语言-UDP通讯
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        UDP特点
+
+无连接：只知道对端的IP和端口号就可以发送，不需要实现建立连接。
+不可靠：没有确认机制， 没有重传机制。如果因为网络故障该段无法发到对方， UDP协议层也不会给应用层返回任何错误信息。
+面向数据报： 应用层交给UDP多长的报文， UDP原样发送既不会拆分，也不会合并。如果发送端调用一次sendto, 发送100个字节, 那么接收端也必须调用对应的一次recvfrom, 接收10...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://s1.ax1x.com/2023/04/19/p9FQApQ.png'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://s1.ax1x.com/2023/04/19/p9FQApQ.png">
+            <meta itemprop="name" content="小蜗">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-05-15T11:45:09+08:00">2023-05-15</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2023/05/15/%E5%9F%BA%E4%BA%8EGO%E8%AF%AD%E8%A8%80-UDP%E9%80%9A%E8%AE%AF/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
       
         
           <div class='post-wrapper'>
@@ -2530,7 +2599,7 @@ TCP的握手有三个过程，首先客户端发送一个syn的包，表示建�
 
 
     <div class='content'>
-      <a href="/tags/go/" style="font-size: 14px; color: #999">-go</a> <a href="/tags/web/" style="font-size: 14px; color: #999">-web</a> <a href="/tags/%E9%80%9A%E4%BF%A1/" style="font-size: 14px; color: #999">-通信</a>
+      <a href="/tags/go/" style="font-size: 24px; color: #555">-go</a> <a href="/tags/web/" style="font-size: 14px; color: #999">-web</a> <a href="/tags/%E9%80%9A%E4%BF%A1/" style="font-size: 14px; color: #999">-通信</a>
     </div>
   </section>
 
@@ -2556,7 +2625,7 @@ TCP的握手有三个过程，首先客户端发送一个syn的包，表示建�
       
         <div class="webinfo-item">
           <div>文章数目：</div>
-          <div>3 篇</div>
+          <div>4 篇</div>
         </div>
       
 
@@ -2577,7 +2646,7 @@ TCP的握手有三个过程，首先客户端发送一个syn的包，表示建�
       
         <div class="webinfo-item">
           <div>最后活动时间：</div>
-          <div id="last-update-show">2023-05-14 日</div>
+          <div id="last-update-show">2023-05-15 日</div>
         </div>
       
     </div>
@@ -2602,7 +2671,7 @@ TCP的握手有三个过程，首先客户端发送一个syn的包，表示建�
 
 
   <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2023/05/14/%E5%9F%BA%E4%BA%8EGO%E8%AF%AD%E8%A8%80-tcp%E6%89%AB%E6%8F%8F/"><div class="item"><time>2023-05-14</time></div><span>基于GO语言-tcp扫描</span></a></li><li><a class="widget-last" href="/2023/04/19/HEXO/"><div class="item"><time>2023-04-23</time></div><span>HEXO</span></a></li><li><a class="widget-last" href="/2023/04/23/modbus/"><div class="item"><time>2023-04-23</time></div><span>Modbus</span></a></li></ul>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/2023/05/15/%E5%9F%BA%E4%BA%8EGO%E8%AF%AD%E8%A8%80-UDP%E9%80%9A%E8%AE%AF/"><div class="item"><time>2023-05-15</time></div><span>基于GO语言-UDP通讯</span></a></li><li><a class="widget-last" href="/2023/05/14/%E5%9F%BA%E4%BA%8EGO%E8%AF%AD%E8%A8%80-tcp%E6%89%AB%E6%8F%8F/"><div class="item"><time>2023-05-14</time></div><span>基于GO语言-tcp扫描</span></a></li><li><a class="widget-last" href="/2023/04/19/HEXO/"><div class="item"><time>2023-04-23</time></div><span>HEXO</span></a></li><li><a class="widget-last" href="/2023/04/23/modbus/"><div class="item"><time>2023-04-23</time></div><span>Modbus</span></a></li></ul>
   </div>
 </section>
 
