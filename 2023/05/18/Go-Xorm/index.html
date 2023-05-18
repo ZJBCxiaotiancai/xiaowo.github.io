@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://zjbcxiaotiancai.github.io/xiaowo.github.io/about/"/>
+  <link rel="canonical" href="https://zjbcxiaotiancai.github.io/xiaowo.github.io/2023/05/18/go-xorm/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -32,20 +32,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>about - 小蜗的博客</title>
-  <meta name="keywords" content="null">
+  <title>Go-Xorm - 小蜗的博客</title>
+  <meta name="keywords" content="-go,null">
   <meta desc name="description" content="this is my blog - Elijah - 小蜗的博客">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="https://zjbcxiaotiancai.github.io/xiaowo.github.io/about/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Go-Xorm">
+<meta property="og:url" content="https://zjbcxiaotiancai.github.io/xiaowo.github.io/2023/05/18/Go-Xorm/index.html">
 <meta property="og:site_name" content="小蜗的博客">
-<meta property="og:description" content="this is my blog">
+<meta property="og:description" content="Xorm特性 支持 Struct 和数据库表之间的灵活映射，并支持自动同步 事务支持 同时支持原始SQL语句和ORM操作的混合执行 使用连写来简化调用 支持使用ID, In, Where, Limit, Join, Having, Table, SQL, Cols等函数和结构体等方式作为条件 支持级联加载Struct Schema支持（仅Postgres） 支持缓存 通过 xorm.io&amp;#x2F">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-04-21T03:04:24.000Z">
-<meta property="article:modified_time" content="2023-04-21T03:04:24.257Z">
+<meta property="article:published_time" content="2023-05-18T00:14:49.000Z">
+<meta property="article:modified_time" content="2023-05-18T00:30:38.618Z">
 <meta property="article:author" content="Elijah">
+<meta property="article:tag" content="-go">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2293,7 +2294,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper page search' style="display: ;">
+      <div id="half" class='cover-wrapper post search' style="display: ;">
         
   <div id="parallax-window"></div>
 
@@ -2362,8 +2363,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-page" id="page" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://zjbcxiaotiancai.github.io/xiaowo.github.io/about/index.html">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://zjbcxiaotiancai.github.io/xiaowo.github.io/2023/05/18/Go-Xorm/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="小蜗的博客">
   </span>
@@ -2384,7 +2385,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        about
+        Go-Xorm
       </h1>
       <div class='new-meta-box'>
         
@@ -2405,10 +2406,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-04-21T11:04:24+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-05-18T08:14:49+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Apr 21, 2023</p>
+    <p>发布于：May 18, 2023</p>
   </a>
 </div>
 
@@ -2419,13 +2420,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>0 words</p>
+      <p>939 words</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
     <a class='notlink'>
       <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
-      <p>1 min</p>
+      <p>4 min</p>
     </a>
   </div>
 
@@ -2449,9 +2450,58 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    
+    <h1 id="Xorm"><a href="#Xorm" class="headerlink" title="Xorm"></a>Xorm</h1><h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><ul>
+<li>支持 Struct 和数据库表之间的灵活映射，并支持自动同步</li>
+<li>事务支持</li>
+<li>同时支持原始SQL语句和ORM操作的混合执行</li>
+<li>使用连写来简化调用</li>
+<li>支持使用ID, In, Where, Limit, Join, Having, Table, SQL, Cols等函数和结构体等方式作为条件</li>
+<li>支持级联加载Struct</li>
+<li>Schema支持（仅Postgres）</li>
+<li>支持缓存</li>
+<li>通过 <a target="_blank" rel="noopener" href="https://xorm.io/reverse">xorm.io&#x2F;reverse</a> 支持根据数据库自动生成 xorm 结构体</li>
+<li>支持记录版本（即乐观锁）</li>
+<li>通过 <a target="_blank" rel="noopener" href="https://xorm.io/builder">xorm.io&#x2F;builder</a> 内置 SQL Builder 支持</li>
+<li>上下文缓存支持</li>
+<li>支持日志上下文</li>
+</ul>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">go get -u github.com/go-sql-driver/mysql</span><br><span class="line">go get xorm.io/xorm</span><br></pre></td></tr></table></figure>
+
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><h3 id="连接数据库"><a href="#连接数据库" class="headerlink" title="连接数据库"></a>连接数据库</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//数据库连接基本信息</span></span><br><span class="line">	<span class="keyword">var</span> (</span><br><span class="line">		username <span class="type">string</span> = <span class="string">&quot;root&quot;</span></span><br><span class="line">		password <span class="type">string</span> = <span class="string">&quot;password&quot;</span></span><br><span class="line">		ip       <span class="type">string</span> = <span class="string">&quot;localhost&quot;</span></span><br><span class="line">		port     <span class="type">int</span>    = <span class="number">3306</span></span><br><span class="line">		dbName   <span class="type">string</span> = <span class="string">&quot;gosql&quot;</span></span><br><span class="line">		charset  <span class="type">string</span> = <span class="string">&quot;utf8mb4&quot;</span> <span class="comment">//数据库字符集</span></span><br><span class="line">	)</span><br><span class="line"><span class="comment">//构建数据库连接信息</span></span><br><span class="line">dataSourceName :=fmt.Sprintf(<span class="string">&quot;%s:%s@tcp(%s:%d)/%s?charset=%s&quot;</span>,</span><br><span class="line">                             username, </span><br><span class="line">                             password, </span><br><span class="line">                             ip, </span><br><span class="line">                             port,</span><br><span class="line">                             dbName,</span><br><span class="line">                             charset) <span class="comment">//这里对数据库连接信息进行拼接</span></span><br><span class="line">engine, err := xorm.NewEngine(<span class="string">&quot;mysql&quot;</span>, dataSourceName)</span><br><span class="line"><span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">		fmt.Printf(<span class="string">&quot;连接失败\r\n&quot;</span>)</span><br><span class="line">	&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">		fmt.Printf(<span class="string">&quot;连接成功\r\n&quot;</span>)</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="创建与表同步的结构体"><a href="#创建与表同步的结构体" class="headerlink" title="创建与表同步的结构体"></a>创建与表同步的结构体</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">// 与表同步的结构体</span><br><span class="line">type User struct &#123;</span><br><span class="line">	Id      int64</span><br><span class="line">	Name    string</span><br><span class="line">	Age     int</span><br><span class="line">	Salt    string</span><br><span class="line">	Passwd  string    `xorm:&quot;varchar(200)&quot;`</span><br><span class="line">	Created time.Time `xorm:&quot;created&quot;`</span><br><span class="line">	Updated time.Time `xorm:&quot;updated&quot;`</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">err = engine.Sync(new(User))</span><br><span class="line">if err != nil &#123;</span><br><span class="line">	fmt.Println(&quot;表结构同步失败！&quot;)</span><br><span class="line">&#125; else &#123;</span><br><span class="line">	fmt.Println(&quot;表结构同步成功！&quot;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="增"><a href="#增" class="headerlink" title="增"></a>增</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">//数据插入</span><br><span class="line">user := User&#123;Id: 0001, Name: &quot;小蜗&quot;, Age: 20, Salt: &quot; &quot;, Passwd: &quot;root&quot;&#125;</span><br><span class="line">n, _ := engine.Insert(&amp;user)</span><br><span class="line">	if n &gt;= 1 &#123;</span><br><span class="line">		fmt.Println(&quot;插入成功&quot;)</span><br><span class="line">		&#125;</span><br><span class="line">//切片插入</span><br><span class="line">var users []User</span><br><span class="line">users = append(users, User&#123;Id: 0002, Name: &quot;小蜗&quot;, Age: 20, Salt: &quot; &quot;, Passwd: &quot;root&quot;&#125;)</span><br><span class="line">users = append(users, User&#123;Id: 0003, Name: &quot;小蜗&quot;, Age: 20, Salt: &quot; &quot;, Passwd: &quot;root&quot;&#125;)</span><br><span class="line">n, _ := engine.Insert(&amp;users)</span><br><span class="line">	if n &gt;= 1 &#123;</span><br><span class="line">		fmt.Println(&quot;切片插入成功&quot;)</span><br><span class="line">	&#125;</span><br><span class="line">//update delete</span><br><span class="line">user := User&#123;Name: &quot;小天才&quot;&#125;</span><br><span class="line">n, _ := engine.ID(0001).Update(&amp;user)</span><br><span class="line">	if n &gt;= 1 &#123;</span><br><span class="line">		fmt.Println(&quot;update 成功&quot;)</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="删"><a href="#删" class="headerlink" title="删"></a>删</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">user = User&#123;Id: 0002&#125;</span><br><span class="line">n, _ = engine.ID(0002).Delete(&amp;user)</span><br><span class="line">	if n &gt;= 1 &#123;</span><br><span class="line">		fmt.Println(&quot;delete 成功&quot;)</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="exec"><a href="#exec" class="headerlink" title="exec"></a>exec</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">engine.Exec(<span class="string">&quot;update user set age = ? where id = ?&quot;</span>, <span class="number">100</span>, <span class="number">3</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="查"><a href="#查" class="headerlink" title="查"></a>查</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">result, _ := engine.Query(<span class="string">&quot;select * from user&quot;</span>)</span><br><span class="line">fmt.Println(result)</span><br><span class="line">result1, _ := engine.QueryString(<span class="string">&quot;select * from user&quot;</span>)</span><br><span class="line">fmt.Println(result1)</span><br><span class="line">result2, _ := engine.QueryInterface(<span class="string">&quot;select * from user&quot;</span>)</span><br><span class="line">fmt.Println(result2)</span><br><span class="line"><span class="comment">//get</span></span><br><span class="line">user := User&#123;Age: <span class="number">100</span>&#125;</span><br><span class="line">engine.Get(&amp;user)</span><br><span class="line">fmt.Println(user)</span><br></pre></td></tr></table></figure>
+
+<h3 id="改"><a href="#改" class="headerlink" title="改"></a>改</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">affected, err := engine.ID(<span class="number">1</span>).Update(&amp;user)</span><br><span class="line"><span class="comment">// UPDATE user SET ... Where id = ?</span></span><br><span class="line"></span><br><span class="line">affected, err := engine.Update(&amp;user, &amp;User&#123;Name:name&#125;)</span><br><span class="line"><span class="comment">// UPDATE user SET ... Where name = ?</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> ids = []<span class="type">int64</span>&#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>&#125;</span><br><span class="line">affected, err := engine.In(ids).Update(&amp;user)</span><br><span class="line"><span class="comment">// UPDATE user SET ... Where id IN (?, ?, ?)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// force update indicated columns by Cols</span></span><br><span class="line">affected, err := engine.ID(<span class="number">1</span>).Cols(<span class="string">&quot;age&quot;</span>).Update(&amp;User&#123;Name:name, Age: <span class="number">12</span>&#125;)</span><br><span class="line"><span class="comment">// UPDATE user SET age = ?, updated=? Where id = ?</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// force NOT update indicated columns by Omit</span></span><br><span class="line">affected, err := engine.ID(<span class="number">1</span>).Omit(<span class="string">&quot;name&quot;</span>).Update(&amp;User&#123;Name:name, Age: <span class="number">12</span>&#125;)</span><br><span class="line"><span class="comment">// UPDATE user SET age = ?, updated=? Where id = ?</span></span><br><span class="line"></span><br><span class="line">affected, err := engine.ID(<span class="number">1</span>).AllCols().Update(&amp;user)</span><br><span class="line"><span class="comment">// UPDATE user SET name=?,age=?,salt=?,passwd=?,updated=? Where id = ?</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h3><p><em>什么是事务？</em></p>
+<blockquote>
+<p>在操作数据库的时候经常需要处理新增，修改，删除等操作，再进行这些操作的时候往往需要用到事物，在新增，修改，删除出错的时候进行回滚操作。</p>
+</blockquote>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">session := engine.NewSession()</span><br><span class="line"><span class="keyword">defer</span> session.Close()</span><br><span class="line"></span><br><span class="line"><span class="comment">// add Begin() before any action</span></span><br><span class="line"><span class="keyword">if</span> err := session.Begin(); err != <span class="literal">nil</span> &#123;</span><br><span class="line">    <span class="comment">// if returned then will rollback automatically</span></span><br><span class="line">    <span class="keyword">return</span> err</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">user1 := Userinfo&#123;Username: <span class="string">&quot;xiaoxiao&quot;</span>, Departname: <span class="string">&quot;dev&quot;</span>, Alias: <span class="string">&quot;lunny&quot;</span>, Created: time.Now()&#125;</span><br><span class="line"><span class="keyword">if</span> _, err := session.Insert(&amp;user1); err != <span class="literal">nil</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> err</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">user2 := Userinfo&#123;Username: <span class="string">&quot;yyy&quot;</span>&#125;</span><br><span class="line"><span class="keyword">if</span> _, err := session.Where(<span class="string">&quot;id = ?&quot;</span>, <span class="number">2</span>).Update(&amp;user2); err != <span class="literal">nil</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> err</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> _, err := session.Exec(<span class="string">&quot;delete from userinfo where username = ?&quot;</span>, user2.Username); err != <span class="literal">nil</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> err</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// add Commit() after all actions</span></span><br><span class="line"><span class="keyword">return</span> session.Commit()</span><br></pre></td></tr></table></figure>
+
+
   </div>
   
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
+      
+    </div>
   
   
     
@@ -2461,10 +2511,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-04-21T11:04:24+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-05-18T08:30:38+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Apr 21, 2023</p>
+    <p>更新于：May 18, 2023</p>
   </a>
 </div>
 
@@ -2472,6 +2522,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         
           
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/go/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>-go</p></a></div>
+  <span hidden itemprop="keywords">-go</span>
+
 
         
       
@@ -2508,6 +2562,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
   
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2023/05/16/Docker/'>
+          <p class='title'>Docker<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>Docker
+
+镜像(Image):
+docker镜像好比是一个模板，可以通过这个模板创建容器服务	tomcat镜像&#x3D;&#x3D;&gt;run&#x3D;&#x3D;&gt;tomc...</p>
+        </a>
+      
+    </div>
+  
   <!-- Custom Files postEnd begin-->
   
   <!-- Custom Files postEnd end-->
@@ -2519,7 +2586,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/about/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2023/05/18/Go-Xorm/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2551,9 +2618,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
 
-  <div class="">
-    <!-- pjax占位 -->
-  </div>
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%89%B9%E6%80%A7"><span class="toc-text">特性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8"><span class="toc-text">使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-text">连接数据库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E4%B8%8E%E8%A1%A8%E5%90%8C%E6%AD%A5%E7%9A%84%E7%BB%93%E6%9E%84%E4%BD%93"><span class="toc-text">创建与表同步的结构体</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A2%9E"><span class="toc-text">增</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0"><span class="toc-text">删</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#exec"><span class="toc-text">exec</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5"><span class="toc-text">查</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%94%B9"><span class="toc-text">改</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1"><span class="toc-text">事务</span></a></li></ol></li></ol>
+    </div>
+  </section>
 
   
 
@@ -2611,7 +2688,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3281,7 +3358,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"小蜗的博客","url":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Elijah","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/","sameAs":["https://github.com/volantis-x"],"description":"this is my blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/","name":"小蜗的博客"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"小蜗的博客","url":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/","keywords":null,"description":"this is my blog","author":{"@type":"Person","name":"Elijah","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/","description":"this is my blog"},"publisher":{"@type":"Organization","name":"小蜗的博客","url":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://zjbcxiaotiancai.github.io/xiaowo.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"about","description":"this is my blog","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/about/index.html"},"author":{"@type":"Person","name":"Elijah","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/"},"publisher":{"@type":"Organization","name":"小蜗的博客","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/about/index.html","wordCount":0,"datePublished":"2023-04-21T03:04:24.000Z","dateModified":"2023-04-21T03:04:24.257Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"小蜗的博客","url":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Elijah","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/","sameAs":["https://github.com/volantis-x"],"description":"this is my blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/","name":"小蜗的博客"}},{"@type":"ListItem","position":3,"item":{"@id":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/2023/05/18/Go-Xorm/","name":"Go-Xorm"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"小蜗的博客","url":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/","keywords":null,"description":"this is my blog","author":{"@type":"Person","name":"Elijah","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/","description":"this is my blog"},"publisher":{"@type":"Organization","name":"小蜗的博客","url":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://zjbcxiaotiancai.github.io/xiaowo.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Go-Xorm","description":"this is my blog","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/2023/05/18/Go-Xorm/"},"author":{"@type":"Person","name":"Elijah","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/"},"publisher":{"@type":"Organization","name":"小蜗的博客","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://zjbcxiaotiancai.github.io/xiaowo.github.io/2023/05/18/Go-Xorm/","wordCount":0,"datePublished":"2023-05-18T00:14:49.000Z","dateModified":"2023-05-18T00:30:38.618Z","keywords":"-go","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
